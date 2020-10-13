@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rv_notiList"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="visible">
+
+   </androidx.recyclerview.widget.RecyclerView>
+   <TextView
+       android:id="@+id/txt_no_text"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="No Data Found"
+       android:textSize="18sp"
+       android:textColor="@color/color_Black"
+       android:gravity="center"
+       android:visibility="gone"/>
+
+</LinearLayout>

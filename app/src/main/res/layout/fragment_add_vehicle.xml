@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEFF1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/profile_tab_layout">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp">
+
+                <EditText
+                    android:id="@+id/edt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_search_box"
+                    android:padding="8dp"
+                    android:gravity="center_vertical"
+                    android:hint="Select Vehicle type"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="15sp"
+                    android:textColor="#404040"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:singleLine="true" />
+                <Spinner
+                    android:id="@+id/spin_vech_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:visibility="invisible"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dropdown"
+                    android:padding="8dp"></Spinner>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/edt_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:hint="Vehicle insurance"
+                android:textColor="#404040"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:fontFamily="@font/calibri"
+                android:drawableRight="@mipmap/attachment"/>
+
+            <EditText
+                android:id="@+id/edt_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Vehicle model or make"
+                android:textColor="#404040"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/calibri"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_Vname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Vehicle name"
+                android:textColor="#404040"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/calibri"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_V_plate_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Vehicle Number"
+                android:textColor="#404040"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/calibri"
+                android:singleLine="true" />
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="36dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/round_search_box"
+                 android:layout_marginTop="12dp">
+
+                 <EditText
+                     android:id="@+id/edt_category"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:padding="8dp"
+                     android:background="@null"
+                     android:gravity="center_vertical"
+                     android:hint="Select category"
+                     android:textSize="15sp"
+                     android:textColor="#404040"
+                     android:editable="false"
+                     android:singleLine="true"
+                     android:fontFamily="@font/calibri"
+                     android:drawableRight="@mipmap/down_arrow" />
+                 <Spinner
+                     android:id="@+id/spin_category"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:visibility="gone"
+                     android:spinnerMode="dropdown"
+                     android:background="@android:color/transparent"
+                     android:text=""
+                     android:padding="8dp"></Spinner>
+
+             </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_search_box"
+                android:layout_marginTop="12dp">
+
+
+                <EditText
+                    android:id="@+id/edt_rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Select rent type"
+                    android:textColor="#404040"
+                    android:textSize="15sp"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:fontFamily="@font/calibri"
+                    android:drawableRight="@mipmap/down_arrow" />
+                <Spinner
+                    android:id="@+id/spin_rent_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent"
+                    android:text=""
+                    android:padding="8dp"></Spinner>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/round_search_box">
+
+                <EditText
+                    android:id="@+id/edt_fule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Select fuel type"
+                    android:textColor="#404040"
+                    android:textSize="15sp"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:fontFamily="@font/calibri"
+                    android:drawableRight="@mipmap/down_arrow" />
+                <Spinner
+                    android:id="@+id/spin_fule_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent"
+                    android:padding="8dp"></Spinner>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/string_date"
+                android:textColor="#404040"
+                android:textSize="15sp"
+                android:editable="false"
+                android:clickable="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:fontFamily="@font/calibri"
+                android:drawableRight="@mipmap/calendar" />
+
+            <EditText
+                android:id="@+id/edt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Prices"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:textColor="#404040"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/calibri"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_seet_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Number of seats"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:textColor="#404040"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/calibri"
+                android:singleLine="true" />
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Address"
+                android:textSize="15sp"
+                android:textColor="#404040"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/calibri"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/edt_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Upload vehicle image"
+                android:textColor="#404040"
+                android:textSize="15sp"
+                android:editable="false"
+                android:clickable="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:fontFamily="@font/calibri"
+                android:drawableRight="@mipmap/attachment" />
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_search_box"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Mobile number"
+                android:textColor="#404040"
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textCursorDrawable="@color/color_Black" />
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"></View>-->
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Save"
+                android:textSize="18sp"
+                android:textColorHint="@color/color_white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/calibri"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

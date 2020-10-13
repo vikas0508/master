@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/white_arrow"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment for Driver"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/profile_tab_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/img_card_payment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/credit_card"/>
+        <TextView
+            android:id="@+id/txt_card_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="card no"
+            android:textSize="18sp"
+            android:textColor="@color/color_Black"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/calibri"
+            android:layout_toRightOf="@+id/img_card_payment"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_tab_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_cvc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:digits="0123456789"
+            android:gravity="center_vertical"
+            android:hint="CVC"
+            android:textColor="@color/color_Black"
+            android:inputType="phone"
+            android:maxLength="3"
+            android:focusable="true"
+            android:singleLine="true"
+            android:drawablePadding="6dp"
+            android:padding="10dp"
+            android:fontFamily="@font/calibri"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@mipmap/cvc"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_tab_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:digits="0123456789"
+            android:gravity="center_vertical"
+            android:hint="Total amount"
+            android:textColor="@color/color_Black"
+            android:inputType="phone"
+            android:maxLength="3"
+            android:focusable="true"
+            android:singleLine="true"
+            android:drawablePadding="6dp"
+            android:padding="10dp"
+            android:fontFamily="@font/calibri"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@mipmap/dollar_icon"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payment"
+        android:textSize="16sp"
+        android:textColorHint="@color/color_white"
+        android:background="@drawable/rounded_blue_button"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/calibri"
+        android:layout_below="@+id/ll_card"/>
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEFF1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:background="#C4000000"
+                android:layout_height="100dp">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@mipmap/default_user" />
+                <RelativeLayout
+                    android:id="@+id/rl_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/blue_circle"
+                    android:padding="6dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/edit_profile"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_Black"
+                android:layout_below="@+id/rl_profile"
+                android:fontFamily="@font/calibri"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/txt_name">
+
+                <EditText
+                    android:id="@+id/edt_F_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:hint="First Name"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                    android:textColor="#404040"
+                    android:textSize="15sp"
+                    android:inputType="textCapWords"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:padding="8dp"
+                    android:fontFamily="@font/calibri"
+                    android:background="@drawable/round_search_box"/>
+
+                <EditText
+                    android:id="@+id/edt_L_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:hint="Last Name"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                    android:textColor="#404040"
+                    android:textSize="15sp"
+                    android:inputType="textCapWords"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:padding="8dp"
+                    android:fontFamily="@font/calibri"
+                    android:background="@drawable/round_search_box"/>
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:hint="Mobile number"
+                    android:textColor="#404040"
+                    android:textSize="15sp"
+                    android:digits="0123456789"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:inputType="phone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:padding="8dp"
+                    android:fontFamily="@font/calibri"
+                    android:background="@drawable/round_search_box"/>
+
+                <EditText
+                    android:id="@+id/edt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:hint="Home Address"
+                    android:textColor="#404040"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:padding="8dp"
+                    android:fontFamily="@font/calibri"
+                    android:background="@drawable/round_search_box"/>
+
+                <TextView
+                    android:id="@+id/txt_licence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:hint="Driver’s License"
+                    android:textColor="#404040"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:padding="8dp"
+                    android:background="@drawable/round_search_box"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/calibri"
+                    android:drawableRight="@mipmap/attachment"/>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Save"
+                    android:textSize="18sp"
+                    android:textAllCaps="true"
+                    android:textColorHint="@color/color_white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/calibri"
+                    android:background="@drawable/rounded_button"/>
+
+            </LinearLayout>
+
+
+
+
+
+           <!-- <TextView
+                android:id="@+id/txt_unlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="No of unlock car"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/edt_unlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="you'hv unlock 10 cars till now."
+                android:textColor="#404040"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@color/color_Black"
+                android:textColorHint="#404040" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"></View>-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

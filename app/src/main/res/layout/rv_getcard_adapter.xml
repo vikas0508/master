@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/img_card"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/credit_card"/>
+        <TextView
+            android:id="@+id/txt_card_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="card no"
+            android:textSize="18sp"
+            android:textColor="@color/color_Black"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/calibri"
+            android:layout_toRightOf="@+id/img_card"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_lightgray"></View>
+
+
+</LinearLayout>

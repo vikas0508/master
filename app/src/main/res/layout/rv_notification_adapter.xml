@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_nav_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer has cancelled the ride"
+            android:textSize="15sp"
+            android:textColor="#363F46"
+            android:fontFamily="@font/calibri"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="6dp"
+            android:drawableLeft="@drawable/ic_notifications"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"></View>
+</LinearLayout>

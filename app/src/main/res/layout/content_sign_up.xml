@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_image"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SignUpActivity"
+    tools:showIn="@layout/activity_sign_up">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#940A0A0A"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/string_signup"
+                android:textSize="22sp"
+                android:textStyle="bold"
+               android:fontFamily="@font/calibri"
+                android:textColor="@color/color_white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/profile_tab_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/round_tab_layout"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/ll_customer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/left_view"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Customer"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent"></View>
+
+                    <LinearLayout
+                        android:id="@+id/ll_owner"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Owner"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="@color/color_Black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_search_box"
+                    android:gravity="center_vertical"
+                    android:hint="Name"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Black"
+                    android:fontFamily="@font/calibri"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                    android:inputType="textCapWords"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorAccent" />
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_search_box"
+                    android:gravity="center_vertical"
+                    android:hint="Email"
+                    android:textColor="@color/color_Black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_search_box"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        app:ccp_hideNameCode="true"
+                        app:ccp_textColor="@color/color_Black"
+                        app:ccp_showFlag="true" />
+                    <EditText
+                        android:id="@+id/edt_mobile_no"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:gravity="center_vertical"
+                        android:hint="Mobile number"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Black"
+                        android:inputType="phone"
+                        android:maxLength="14"
+                        android:singleLine="true"
+                        android:fontFamily="@font/calibri"
+                        android:textColorHint="@color/colorAccent" />
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/checkbox_term"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_terms"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/calibri"
+                    android:buttonTint="@color/colorPrimary"/>
+                <Button
+                    android:id="@+id/btn_countinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sign up"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/color_white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/calibri"
+                    android:background="@drawable/rounded_button"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/already_have_an_account_login"
+                android:textSize="14sp"
+                android:fontFamily="@font/calibri"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_white"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

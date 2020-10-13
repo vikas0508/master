@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background_image"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#940A0A0A">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@mipmap/ryde_logo"
+                android:layout_marginTop="180dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#FFFFFF"
+            android:layout_gravity="bottom">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Get Moving with Ryde Up"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        app:ccp_hideNameCode="true"
+                        app:ccp_textColor="@color/color_Black"
+                        app:ccp_clickable="false"
+                        app:ccp_showFlag="true" />
+                    <TextView
+                        android:id="@+id/txt_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:gravity="center_vertical"
+                        android:hint="Enter your registered mobile number"
+                        android:fontFamily="@font/calibri"
+                        android:textColor="@color/color_white"
+                        android:inputType="phone"
+                        android:textSize="15sp"
+                        android:maxLength="15"
+                        android:padding="0dp"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"></View>
+
+
+                <TextView
+                    android:id="@+id/txt_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_t_have_an_account_sign_up"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/calibri"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/fram_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/back_arrow"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_back"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Please enter your registered mobile number"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp">
+
+                <com.rilixtech.CountryCodePicker
+                    android:id="@+id/ccp_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:ccp_hideNameCode="true"
+                    app:ccp_textColor="@color/color_Black"
+                    app:ccp_showFlag="true" />
+                <EditText
+                    android:id="@+id/edit_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:hint="08123456789"
+                    android:textColor="@color/color_Black"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@+id/ccp_number"
+                    />
+                <View
+                    android:id="@+id/vew_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/edit_mobile_no"
+                    android:layout_toEndOf="@+id/ccp_number"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@android:color/darker_gray"></View>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="Please enter your mobile number"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_below="@+id/vew_line"
+                android:layout_toEndOf="@+id/ccp_number"
+                android:textColor="@android:color/holo_red_light"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_next"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/blue_circle">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/right_arrow"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

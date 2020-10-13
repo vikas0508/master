@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEFF1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/txt_name">
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:src="@mipmap/cancel_request"/>
+
+        <EditText
+            android:id="@+id/edt_from_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:hint="Source"
+            android:textColor="#404040"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:fontFamily="@font/calibri"
+            android:background="@drawable/round_search_box"/>
+
+        <EditText
+            android:id="@+id/edt_to_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:hint="Destination"
+            android:textColor="#404040"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:fontFamily="@font/calibri"
+            android:background="@drawable/round_search_box"/>
+
+        <EditText
+            android:id="@+id/edt_from_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:hint="Start date"
+            android:textColor="#404040"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:padding="8dp"
+            android:fontFamily="@font/calibri"
+            android:background="@drawable/round_search_box"/>
+
+        <EditText
+            android:id="@+id/edt_to_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:hint="End date"
+            android:textColor="#404040"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:padding="8dp"
+            android:fontFamily="@font/calibri"
+            android:background="@drawable/round_search_box"/>
+
+        <EditText
+            android:id="@+id/edt_from_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:hint="Start time"
+            android:textColor="#404040"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:padding="8dp"
+            android:fontFamily="@font/calibri"
+            android:background="@drawable/round_search_box"/>
+        <EditText
+            android:id="@+id/edt_to_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:hint="End time"
+            android:textColor="#404040"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:padding="8dp"
+            android:fontFamily="@font/calibri"
+            android:background="@drawable/round_search_box"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Submit"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:textColorHint="@color/color_white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/calibri"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:src="@mipmap/default_user" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp">
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text=""
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:textColor="#414141" />
+        <TextView
+            android:id="@+id/msgr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="210dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textview"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="Sampleleft"
+            android:layout_below="@+id/txt_date"
+            android:layout_marginLeft="0dp"
+            android:textColor="#000" />
+        <TextView
+            android:id="@+id/txt_chattim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="hhj"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/msgr"
+            android:visibility="visible"
+            android:textColor="#414141" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
